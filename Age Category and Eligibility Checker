@@ -1,0 +1,20 @@
+try:
+ Name=(input())
+ Age=int(input())
+ print("Hello:-",Name)
+ if Age<=0:
+       print("Age cant be negative")
+ elif Age<13:
+        print("You are a Child")
+ elif Age<=17 and Age>=13:
+        print("You are a Teenager")
+ elif Age >=18  and Age<=59:
+        print("You are an Adult")
+ else:
+        print("You are a Senior Citizen")
+ if Age>=18:
+       print("You Are Eligible To Vote")
+ else:
+       print("You Are Not Eligible To Vote")
+except ValueError:
+    print("Invalid Age Input")
